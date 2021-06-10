@@ -19,7 +19,7 @@ limitations under the License.
 package v1alpha2
 
 import (
-	internalinterfaces "github.com/kubernetes-sigs/kube-batch/pkg/client/informers/externalversions/internalinterfaces"
+	internalinterfaces "github.com/paipaoso/kube-batch/pkg/client/informers/externalversions/internalinterfaces"
 )
 
 // Interface provides access to all the informers in this group version.

@@ -139,6 +139,6 @@ controllers. For example, if `PodGroup` is `Unknown` for MPI job, the controller
 ## Reference
 
 * [Coscheduling](https://github.com/kubernetes/enhancements/pull/639)
-* [Add phase/conditions into PodGroup.Status](https://github.com/kubernetes-sigs/kube-batch/issues/521)
-* [Add Pod Condition and unblock cluster autoscaler](https://github.com/kubernetes-sigs/kube-batch/issues/526)
+* [Add phase/conditions into PodGroup.Status](https://github.com/paipaoso/kube-batch/issues/521)
+* [Add Pod Condition and unblock cluster autoscaler](https://github.com/paipaoso/kube-batch/issues/526)
 

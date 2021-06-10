@@ -21,8 +21,8 @@ package versioned
 import (
 	"fmt"
 
-	schedulingv1alpha1 "github.com/kubernetes-sigs/kube-batch/pkg/client/clientset/versioned/typed/scheduling/v1alpha1"
-	schedulingv1alpha2 "github.com/kubernetes-sigs/kube-batch/pkg/client/clientset/versioned/typed/scheduling/v1alpha2"
+	schedulingv1alpha1 "github.com/paipaoso/kube-batch/pkg/client/clientset/versioned/typed/scheduling/v1alpha1"
+	schedulingv1alpha2 "github.com/paipaoso/kube-batch/pkg/client/clientset/versioned/typed/scheduling/v1alpha2"
 	discovery "k8s.io/client-go/discovery"
 	rest "k8s.io/client-go/rest"
 	flowcontrol "k8s.io/client-go/util/flowcontrol"

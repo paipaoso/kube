@@ -1,6 +1,6 @@
 BIN_DIR=_output/bin
 RELEASE_VER=v0.5
-REPO_PATH=github.com/kubernetes-sigs/kube-batch
+REPO_PATH=github.com/paipaoso/kube-batch
 GitSHA=`git rev-parse HEAD`
 Date=`date "+%Y-%m-%d %H:%M:%S"`
 REL_OSARCH="linux/amd64"

@@ -24,10 +24,10 @@ import (
 	"k8s.io/apimachinery/pkg/util/wait"
 	"k8s.io/client-go/rest"
 
-	schedcache "github.com/kubernetes-sigs/kube-batch/pkg/scheduler/cache"
-	"github.com/kubernetes-sigs/kube-batch/pkg/scheduler/conf"
-	"github.com/kubernetes-sigs/kube-batch/pkg/scheduler/framework"
-	"github.com/kubernetes-sigs/kube-batch/pkg/scheduler/metrics"
+	schedcache "github.com/paipaoso/kube-batch/pkg/scheduler/cache"
+	"github.com/paipaoso/kube-batch/pkg/scheduler/conf"
+	"github.com/paipaoso/kube-batch/pkg/scheduler/framework"
+	"github.com/paipaoso/kube-batch/pkg/scheduler/metrics"
 )
 
 // Scheduler watches for new unscheduled pods for kubebatch. It attempts to find

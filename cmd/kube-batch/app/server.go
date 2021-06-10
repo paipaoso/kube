@@ -24,9 +24,9 @@ import (
 	"time"
 
 	"github.com/golang/glog"
-	"github.com/kubernetes-sigs/kube-batch/cmd/kube-batch/app/options"
-	"github.com/kubernetes-sigs/kube-batch/pkg/scheduler"
-	"github.com/kubernetes-sigs/kube-batch/pkg/version"
+	"github.com/paipaoso/kube-batch/cmd/kube-batch/app/options"
+	"github.com/paipaoso/kube-batch/pkg/scheduler"
+	"github.com/paipaoso/kube-batch/pkg/version"
 	"github.com/prometheus/client_golang/prometheus/promhttp"
 
 	v1 "k8s.io/api/core/v1"

@@ -24,10 +24,10 @@ import (
 
 	"github.com/golang/glog"
 
-	"github.com/kubernetes-sigs/kube-batch/pkg/apis/scheduling/v1alpha1"
-	"github.com/kubernetes-sigs/kube-batch/pkg/apis/scheduling/v1alpha2"
-	"github.com/kubernetes-sigs/kube-batch/pkg/apis/utils"
-	"github.com/kubernetes-sigs/kube-batch/pkg/scheduler/api"
+	"github.com/paipaoso/kube-batch/pkg/apis/scheduling/v1alpha1"
+	"github.com/paipaoso/kube-batch/pkg/apis/scheduling/v1alpha2"
+	"github.com/paipaoso/kube-batch/pkg/apis/utils"
+	"github.com/paipaoso/kube-batch/pkg/scheduler/api"
 )
 
 const (

@@ -19,11 +19,11 @@ limitations under the License.
 package fake
 
 import (
-	clientset "github.com/kubernetes-sigs/kube-batch/pkg/client/clientset/versioned"
-	schedulingv1alpha1 "github.com/kubernetes-sigs/kube-batch/pkg/client/clientset/versioned/typed/scheduling/v1alpha1"
-	fakeschedulingv1alpha1 "github.com/kubernetes-sigs/kube-batch/pkg/client/clientset/versioned/typed/scheduling/v1alpha1/fake"
-	schedulingv1alpha2 "github.com/kubernetes-sigs/kube-batch/pkg/client/clientset/versioned/typed/scheduling/v1alpha2"
-	fakeschedulingv1alpha2 "github.com/kubernetes-sigs/kube-batch/pkg/client/clientset/versioned/typed/scheduling/v1alpha2/fake"
+	clientset "github.com/paipaoso/kube-batch/pkg/client/clientset/versioned"
+	schedulingv1alpha1 "github.com/paipaoso/kube-batch/pkg/client/clientset/versioned/typed/scheduling/v1alpha1"
+	fakeschedulingv1alpha1 "github.com/paipaoso/kube-batch/pkg/client/clientset/versioned/typed/scheduling/v1alpha1/fake"
+	schedulingv1alpha2 "github.com/paipaoso/kube-batch/pkg/client/clientset/versioned/typed/scheduling/v1alpha2"
+	fakeschedulingv1alpha2 "github.com/paipaoso/kube-batch/pkg/client/clientset/versioned/typed/scheduling/v1alpha2/fake"
 	"k8s.io/apimachinery/pkg/runtime"
 	"k8s.io/apimachinery/pkg/watch"
 	"k8s.io/client-go/discovery"

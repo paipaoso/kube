@@ -23,8 +23,8 @@ import (
 	"k8s.io/apimachinery/pkg/labels"
 	"k8s.io/kubernetes/pkg/scheduler/algorithm"
 
-	"github.com/kubernetes-sigs/kube-batch/pkg/scheduler/api"
-	"github.com/kubernetes-sigs/kube-batch/pkg/scheduler/framework"
+	"github.com/paipaoso/kube-batch/pkg/scheduler/api"
+	"github.com/paipaoso/kube-batch/pkg/scheduler/framework"
 )
 
 // PodLister is used in predicate and nodeorder plugin

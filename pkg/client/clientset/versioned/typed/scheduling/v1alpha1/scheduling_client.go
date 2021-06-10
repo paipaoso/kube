@@ -19,8 +19,8 @@ limitations under the License.
 package v1alpha1
 
 import (
-	v1alpha1 "github.com/kubernetes-sigs/kube-batch/pkg/apis/scheduling/v1alpha1"
-	"github.com/kubernetes-sigs/kube-batch/pkg/client/clientset/versioned/scheme"
+	v1alpha1 "github.com/paipaoso/kube-batch/pkg/apis/scheduling/v1alpha1"
+	"github.com/paipaoso/kube-batch/pkg/client/clientset/versioned/scheme"
 	rest "k8s.io/client-go/rest"
 )
 

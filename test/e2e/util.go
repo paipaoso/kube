@@ -44,9 +44,9 @@ import (
 	"k8s.io/client-go/tools/clientcmd"
 	utilpath "k8s.io/utils/path"
 
-	kbv1 "github.com/kubernetes-sigs/kube-batch/pkg/apis/scheduling/v1alpha1"
-	kbver "github.com/kubernetes-sigs/kube-batch/pkg/client/clientset/versioned"
-	kbapi "github.com/kubernetes-sigs/kube-batch/pkg/scheduler/api"
+	kbv1 "github.com/paipaoso/kube-batch/pkg/apis/scheduling/v1alpha1"
+	kbver "github.com/paipaoso/kube-batch/pkg/client/clientset/versioned"
+	kbapi "github.com/paipaoso/kube-batch/pkg/scheduler/api"
 
 	. "github.com/onsi/ginkgo"
 )

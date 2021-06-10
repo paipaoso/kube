@@ -1,6 +1,6 @@
 # Tutorial of kube-batch
 
-This doc will show how to run `kube-batch` as a kubernetes batch scheduler. It is for [master](https://github.com/kubernetes-sigs/kube-batch/tree/master) branch.
+This doc will show how to run `kube-batch` as a kubernetes batch scheduler. It is for [master](https://github.com/paipaoso/kube-batch/tree/master) branch.
 
 ## Prerequisite
 To run `kube-batch`, a Kubernetes cluster must start up. Here is a document on [Using kubeadm to Create a Cluster](https://kubernetes.io/docs/setup/independent/create-cluster-kubeadm/). Additionally, for common purposes and testing and deploying on local machine, one can use Minikube. This is a document on [Running Kubernetes Locally via Minikube](https://kubernetes.io/docs/getting-started-guides/minikube/). Besides, you can also use [kind](https://github.com/kubernetes-sigs/kind) which is a tool for running local Kubernetes clusters using Docker container "nodes".
@@ -14,7 +14,7 @@ To run `kube-batch`, a Kubernetes cluster must start up. Here is a document on [
 ```bash
 # mkdir -p $GOPATH/src/github.com/kubernetes-sigs/
 # cd $GOPATH/src/github.com/kubernetes-sigs/
-# git clone http://github.com/kubernetes-sigs/kube-batch -b release-0.5
+# git clone http://github.com/paipaoso/kube-batch -b release-0.5
 ```
 
 ### Deploy kube-batch by Helm
@@ -22,7 +22,7 @@ To run `kube-batch`, a Kubernetes cluster must start up. Here is a document on [
 Run `kube-batch` as kubernetes scheduler.
 
 ```bash
-# helm install $GOPATH/src/github.com/kubernetes-sigs/kube-batch/deployment/kube-batch --namespace kube-system
+# helm install $GOPATH/src/github.com/paipaoso/kube-batch/deployment/kube-batch --namespace kube-system
 ```
 
 Verify the release
@@ -221,16 +221,16 @@ please update your helm to latest version and try it again.
 ### What permissions should I grant to kube-batch? It failed to list resources at the cluster scope.
 
 ```
-E0327 06:30:45.494416       1 reflector.go:134] github.com/kubernetes-sigs/kube-batch/pkg/scheduler/cache/cache.go:302: Failed to list *v1.Pod: pods is forbidden: User "system:serviceaccount:kube-system:default" cannot list pods at the cluster scope
-E0327 06:30:45.495362       1 reflector.go:134] github.com/kubernetes-sigs/kube-batch/pkg/scheduler/cache/cache.go:306: Failed to list *v1.PersistentVolumeClaim: persistentvolumeclaims is forbidden: User "system:serviceaccount:kube-system:default" cannot list persistentvolumeclaims at the cluster scope
-E0327 06:30:45.496355       1 reflector.go:134] github.com/kubernetes-sigs/kube-batch/pkg/scheduler/cache/cache.go:308: Failed to list *v1alpha1.Queue: queues.scheduling.incubator.k8s.io is forbidden: User "system:serviceaccount:kube-system:default" cannot list queues.scheduling.incubator.k8s.io at the cluster scope
-E0327 06:30:45.497695       1 reflector.go:134] github.com/kubernetes-sigs/kube-batch/pkg/scheduler/cache/cache.go:301: Failed to list *v1beta1.PodDisruptionBudget: poddisruptionbudgets.policy is forbidden: User "system:serviceaccount:kube-system:default" cannot list poddisruptionbudgets.policy at the cluster scope
-E0327 06:30:45.498641       1 reflector.go:134] github.com/kubernetes-sigs/kube-batch/pkg/scheduler/cache/cache.go:303: Failed to list *v1.Node: nodes is forbidden: User "system:serviceaccount:kube-system:default" cannot list nodes at the cluster scope
-E0327 06:30:45.499895       1 reflector.go:134] github.com/kubernetes-sigs/kube-batch/pkg/scheduler/cache/cache.go:305: Failed to list *v1.PersistentVolume: persistentvolumes is forbidden: User "system:serviceaccount:kube-system:default" cannot list persistentvolumes at the cluster scope
+E0327 06:30:45.494416       1 reflector.go:134] github.com/paipaoso/kube-batch/pkg/scheduler/cache/cache.go:302: Failed to list *v1.Pod: pods is forbidden: User "system:serviceaccount:kube-system:default" cannot list pods at the cluster scope
+E0327 06:30:45.495362       1 reflector.go:134] github.com/paipaoso/kube-batch/pkg/scheduler/cache/cache.go:306: Failed to list *v1.PersistentVolumeClaim: persistentvolumeclaims is forbidden: User "system:serviceaccount:kube-system:default" cannot list persistentvolumeclaims at the cluster scope
+E0327 06:30:45.496355       1 reflector.go:134] github.com/paipaoso/kube-batch/pkg/scheduler/cache/cache.go:308: Failed to list *v1alpha1.Queue: queues.scheduling.incubator.k8s.io is forbidden: User "system:serviceaccount:kube-system:default" cannot list queues.scheduling.incubator.k8s.io at the cluster scope
+E0327 06:30:45.497695       1 reflector.go:134] github.com/paipaoso/kube-batch/pkg/scheduler/cache/cache.go:301: Failed to list *v1beta1.PodDisruptionBudget: poddisruptionbudgets.policy is forbidden: User "system:serviceaccount:kube-system:default" cannot list poddisruptionbudgets.policy at the cluster scope
+E0327 06:30:45.498641       1 reflector.go:134] github.com/paipaoso/kube-batch/pkg/scheduler/cache/cache.go:303: Failed to list *v1.Node: nodes is forbidden: User "system:serviceaccount:kube-system:default" cannot list nodes at the cluster scope
+E0327 06:30:45.499895       1 reflector.go:134] github.com/paipaoso/kube-batch/pkg/scheduler/cache/cache.go:305: Failed to list *v1.PersistentVolume: persistentvolumes is forbidden: User "system:serviceaccount:kube-system:default" cannot list persistentvolumes at the cluster scope
 
 ```
 
-`kube-batch` need to collect cluster information(such as Pod, Node, CRD, etc) for scheduling, so the service account used by the deployment must have permission to access those cluster resources, otherwise, `kube-batch` will fail to startup. For users who are not familiar with Kubernetes RBAC, please copy the example/role.yaml into `$GOPATH/src/github.com/kubernetes-sigs/kube-batch/deployment/kube-batch/templates/` and reinstall batch.
+`kube-batch` need to collect cluster information(such as Pod, Node, CRD, etc) for scheduling, so the service account used by the deployment must have permission to access those cluster resources, otherwise, `kube-batch` will fail to startup. For users who are not familiar with Kubernetes RBAC, please copy the example/role.yaml into `$GOPATH/src/github.com/paipaoso/kube-batch/deployment/kube-batch/templates/` and reinstall batch.
 
 
 ### How to enable gang-scheduling on kubeflow/tf-operator for kube-batch?

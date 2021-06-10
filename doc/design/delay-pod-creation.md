@@ -109,8 +109,8 @@ disabled in the configuration, it'll keep the same behaviour as before.
 ## Reference
 
 * [Coscheduling](https://github.com/kubernetes/enhancements/pull/639)
-* [Delay Pod creation](https://github.com/kubernetes-sigs/kube-batch/issues/539)
-* [PodGroup Status](https://github.com/kubernetes-sigs/kube-batch/blob/master/doc/design/podgroup-status.md)
-* [Support 'spec.TotalResources' in PodGroup](https://github.com/kubernetes-sigs/kube-batch/issues/401)
+* [Delay Pod creation](https://github.com/paipaoso/kube-batch/issues/539)
+* [PodGroup Status](https://github.com/paipaoso/kube-batch/blob/master/doc/design/podgroup-status.md)
+* [Support 'spec.TotalResources' in PodGroup](https://github.com/paipaoso/kube-batch/issues/401)
 * [Dynamic Admission Control](https://kubernetes.io/docs/reference/access-authn-authz/extensible-admission-controllers/#write-an-admission-webhook-server)
-* [Add support for podGroup number limits for one queue](https://github.com/kubernetes-sigs/kube-batch/issues/452)
+* [Add support for podGroup number limits for one queue](https://github.com/paipaoso/kube-batch/issues/452)

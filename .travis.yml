@@ -11,7 +11,7 @@ services:
 go:
   - "1.13"
 
-go_import_path: github.com/kubernetes-sigs/kube-batch
+go_import_path: github.com/paipaoso/kube-batch
 
 install:
   - go get -u golang.org/x/lint/golint

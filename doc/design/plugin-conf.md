@@ -34,7 +34,7 @@ tiers:
 ```
 
 The `actions` is a list of actions that will be executed by `kube-batch` in order, separated
-by commas. Refer to the [tutorial](https://github.com/kubernetes-sigs/kube-batch/issues/434) for
+by commas. Refer to the [tutorial](https://github.com/paipaoso/kube-batch/issues/434) for
 the list of supported actions in `kube-batch`. Those actions will be executed in order, although
 the "order" maybe incorrect; the `kube-batch` does not enforce that.
 
@@ -75,5 +75,5 @@ use `ConfigMap` to acesss the volume of `kube-batch` pod during deployment.
 
 ## Reference
 
-* [Add preemption by Job priority](https://github.com/kubernetes-sigs/kube-batch/issues/261)
-* [Support multiple tiers for Plugins](https://github.com/kubernetes-sigs/kube-batch/issues/484)
+* [Add preemption by Job priority](https://github.com/paipaoso/kube-batch/issues/261)
+* [Support multiple tiers for Plugins](https://github.com/paipaoso/kube-batch/issues/484)

@@ -25,9 +25,9 @@ import (
 	"k8s.io/kubernetes/pkg/scheduler/algorithm/predicates"
 	schedulernodeinfo "k8s.io/kubernetes/pkg/scheduler/nodeinfo"
 
-	"github.com/kubernetes-sigs/kube-batch/pkg/scheduler/api"
-	"github.com/kubernetes-sigs/kube-batch/pkg/scheduler/framework"
-	"github.com/kubernetes-sigs/kube-batch/pkg/scheduler/plugins/util"
+	"github.com/paipaoso/kube-batch/pkg/scheduler/api"
+	"github.com/paipaoso/kube-batch/pkg/scheduler/framework"
+	"github.com/paipaoso/kube-batch/pkg/scheduler/plugins/util"
 )
 
 const (

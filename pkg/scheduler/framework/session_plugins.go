@@ -17,7 +17,7 @@ limitations under the License.
 package framework
 
 import (
-	"github.com/kubernetes-sigs/kube-batch/pkg/scheduler/api"
+	"github.com/paipaoso/kube-batch/pkg/scheduler/api"
 	"k8s.io/kubernetes/pkg/scheduler/algorithm/priorities"
 )
 

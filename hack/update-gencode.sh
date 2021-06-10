@@ -28,7 +28,7 @@ CODEGEN_PKG=${SCRIPT_ROOT}/vendor/k8s.io/code-generator
 cd ${SCRIPT_ROOT}
 
 bash ${CODEGEN_PKG}/generate-groups.sh "deepcopy,client,informer,lister" \
-github.com/kubernetes-sigs/kube-batch/pkg/client github.com/kubernetes-sigs/kube-batch/pkg/apis \
+github.com/paipaoso/kube-batch/pkg/client github.com/paipaoso/kube-batch/pkg/apis \
 "scheduling:v1alpha1 scheduling:v1alpha2" \
 --go-header-file ${SCRIPT_ROOT}/hack/boilerplate/boilerplate.generatego.txt
 

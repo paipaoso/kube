@@ -25,14 +25,14 @@ import (
 	metav1 "k8s.io/apimachinery/pkg/apis/meta/v1"
 	"k8s.io/client-go/tools/record"
 
-	kbv1 "github.com/kubernetes-sigs/kube-batch/pkg/apis/scheduling/v1alpha1"
-	"github.com/kubernetes-sigs/kube-batch/pkg/scheduler/api"
-	"github.com/kubernetes-sigs/kube-batch/pkg/scheduler/cache"
-	"github.com/kubernetes-sigs/kube-batch/pkg/scheduler/conf"
-	"github.com/kubernetes-sigs/kube-batch/pkg/scheduler/framework"
-	"github.com/kubernetes-sigs/kube-batch/pkg/scheduler/plugins/drf"
-	"github.com/kubernetes-sigs/kube-batch/pkg/scheduler/plugins/proportion"
-	"github.com/kubernetes-sigs/kube-batch/pkg/scheduler/util"
+	kbv1 "github.com/paipaoso/kube-batch/pkg/apis/scheduling/v1alpha1"
+	"github.com/paipaoso/kube-batch/pkg/scheduler/api"
+	"github.com/paipaoso/kube-batch/pkg/scheduler/cache"
+	"github.com/paipaoso/kube-batch/pkg/scheduler/conf"
+	"github.com/paipaoso/kube-batch/pkg/scheduler/framework"
+	"github.com/paipaoso/kube-batch/pkg/scheduler/plugins/drf"
+	"github.com/paipaoso/kube-batch/pkg/scheduler/plugins/proportion"
+	"github.com/paipaoso/kube-batch/pkg/scheduler/util"
 )
 
 func TestAllocate(t *testing.T) {

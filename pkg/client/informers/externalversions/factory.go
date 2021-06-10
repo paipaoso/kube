@@ -23,9 +23,9 @@ import (
 	sync "sync"
 	time "time"
 
-	versioned "github.com/kubernetes-sigs/kube-batch/pkg/client/clientset/versioned"
-	internalinterfaces "github.com/kubernetes-sigs/kube-batch/pkg/client/informers/externalversions/internalinterfaces"
-	scheduling "github.com/kubernetes-sigs/kube-batch/pkg/client/informers/externalversions/scheduling"
+	versioned "github.com/paipaoso/kube-batch/pkg/client/clientset/versioned"
+	internalinterfaces "github.com/paipaoso/kube-batch/pkg/client/informers/externalversions/internalinterfaces"
+	scheduling "github.com/paipaoso/kube-batch/pkg/client/informers/externalversions/scheduling"
 	v1 "k8s.io/apimachinery/pkg/apis/meta/v1"
 	runtime "k8s.io/apimachinery/pkg/runtime"
 	schema "k8s.io/apimachinery/pkg/runtime/schema"

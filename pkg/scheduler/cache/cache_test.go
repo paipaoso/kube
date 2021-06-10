@@ -22,15 +22,15 @@ import (
 	"strconv"
 	"testing"
 
-	"github.com/kubernetes-sigs/kube-batch/pkg/scheduler/util"
+	"github.com/paipaoso/kube-batch/pkg/scheduler/util"
 	v1 "k8s.io/api/core/v1"
 	schedulingv1beta1 "k8s.io/api/scheduling/v1beta1"
 	"k8s.io/apimachinery/pkg/api/resource"
 	metav1 "k8s.io/apimachinery/pkg/apis/meta/v1"
 	"k8s.io/apimachinery/pkg/types"
 
-	kbv1 "github.com/kubernetes-sigs/kube-batch/pkg/apis/scheduling/v1alpha1"
-	"github.com/kubernetes-sigs/kube-batch/pkg/scheduler/api"
+	kbv1 "github.com/paipaoso/kube-batch/pkg/apis/scheduling/v1alpha1"
+	"github.com/paipaoso/kube-batch/pkg/scheduler/api"
 )
 
 func nodesEqual(l, r map[string]*api.NodeInfo) bool {

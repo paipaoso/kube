@@ -29,11 +29,11 @@ import (
 	metav1 "k8s.io/apimachinery/pkg/apis/meta/v1"
 	"k8s.io/client-go/tools/cache"
 
-	kbv1 "github.com/kubernetes-sigs/kube-batch/pkg/apis/scheduling/v1alpha1"
-	kbv2 "github.com/kubernetes-sigs/kube-batch/pkg/apis/scheduling/v1alpha2"
-	"github.com/kubernetes-sigs/kube-batch/pkg/apis/utils"
-	"github.com/kubernetes-sigs/kube-batch/pkg/scheduler/api"
-	kbapi "github.com/kubernetes-sigs/kube-batch/pkg/scheduler/api"
+	kbv1 "github.com/paipaoso/kube-batch/pkg/apis/scheduling/v1alpha1"
+	kbv2 "github.com/paipaoso/kube-batch/pkg/apis/scheduling/v1alpha2"
+	"github.com/paipaoso/kube-batch/pkg/apis/utils"
+	"github.com/paipaoso/kube-batch/pkg/scheduler/api"
+	kbapi "github.com/paipaoso/kube-batch/pkg/scheduler/api"
 )
 
 func isTerminated(status kbapi.TaskStatus) bool {

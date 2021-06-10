@@ -19,7 +19,7 @@ package nodeorder
 import (
 	"fmt"
 
-	"github.com/kubernetes-sigs/kube-batch/pkg/scheduler/framework"
+	"github.com/paipaoso/kube-batch/pkg/scheduler/framework"
 	v1 "k8s.io/api/core/v1"
 	"k8s.io/kubernetes/pkg/scheduler/algorithm/priorities"
 )

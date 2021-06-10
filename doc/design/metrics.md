@@ -2,7 +2,7 @@
 ## Kube-batch Monitoring
 
 ## Introduction
-Currently users can leverage controller logs and job events to monitor kube-batch. While useful for debugging, none of this options is particularly practical for monitoring kube-batch behaviour over time. There's also requirement like to monitor kube-batch in one view to resolve critical performance issue in time [#427](https://github.com/kubernetes-sigs/kube-batch/issues/427).
+Currently users can leverage controller logs and job events to monitor kube-batch. While useful for debugging, none of this options is particularly practical for monitoring kube-batch behaviour over time. There's also requirement like to monitor kube-batch in one view to resolve critical performance issue in time [#427](https://github.com/paipaoso/kube-batch/issues/427).
 
 This document describes metrics we want to add into kube-batch to better monitor performance.
 

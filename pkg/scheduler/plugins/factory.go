@@ -17,15 +17,15 @@ limitations under the License.
 package plugins
 
 import (
-	"github.com/kubernetes-sigs/kube-batch/pkg/scheduler/framework"
+	"github.com/paipaoso/kube-batch/pkg/scheduler/framework"
 
-	"github.com/kubernetes-sigs/kube-batch/pkg/scheduler/plugins/conformance"
-	"github.com/kubernetes-sigs/kube-batch/pkg/scheduler/plugins/drf"
-	"github.com/kubernetes-sigs/kube-batch/pkg/scheduler/plugins/gang"
-	"github.com/kubernetes-sigs/kube-batch/pkg/scheduler/plugins/nodeorder"
-	"github.com/kubernetes-sigs/kube-batch/pkg/scheduler/plugins/predicates"
-	"github.com/kubernetes-sigs/kube-batch/pkg/scheduler/plugins/priority"
-	"github.com/kubernetes-sigs/kube-batch/pkg/scheduler/plugins/proportion"
+	"github.com/paipaoso/kube-batch/pkg/scheduler/plugins/conformance"
+	"github.com/paipaoso/kube-batch/pkg/scheduler/plugins/drf"
+	"github.com/paipaoso/kube-batch/pkg/scheduler/plugins/gang"
+	"github.com/paipaoso/kube-batch/pkg/scheduler/plugins/nodeorder"
+	"github.com/paipaoso/kube-batch/pkg/scheduler/plugins/predicates"
+	"github.com/paipaoso/kube-batch/pkg/scheduler/plugins/priority"
+	"github.com/paipaoso/kube-batch/pkg/scheduler/plugins/proportion"
 )
 
 func init() {

@@ -30,7 +30,7 @@ import (
 	schedulerapi "k8s.io/kubernetes/pkg/scheduler/api"
 	schedulernodeinfo "k8s.io/kubernetes/pkg/scheduler/nodeinfo"
 
-	"github.com/kubernetes-sigs/kube-batch/pkg/scheduler/api"
+	"github.com/paipaoso/kube-batch/pkg/scheduler/api"
 )
 
 // HostPriority represents the priority of scheduling to a particular host, higher priority is better.

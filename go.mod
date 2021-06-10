@@ -1,4 +1,4 @@
-module github.com/kubernetes-sigs/kube-batch
+module github.com/paipaoso/kube-batch
 
 go 1.13
 
